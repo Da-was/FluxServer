@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLUX</title>
+</head>
+<body>
+    <nav id="Navigation">
+        <div class="NavItem">
+            <a href=" {% url 'home' %}">
+                <img src="" alt="Logo">
+            </a>
+        </div>
+
+        <div class="NavItem">
+           {{pageTitle|default:""}}
+        </div>
+
+        <div class="NavItem">
+            Usuário
+        </div>
+    </nav>
+
+    <Main id="MainContent">
+
+        {% block content %}
+        {% endblock content %}
+
+    </Main>
+
+    <footer id="FooterBar">
+        <div id="FooterAligner">
+            <img src="" alt="Logo">
+        </div>
+    </footer>
+</body>
+</html>
