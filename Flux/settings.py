@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     #custom
     'clients',
     'devices',
-    'plants'
+    'plants',
+    #api
+    'rest_framework'
 
 ]
 
